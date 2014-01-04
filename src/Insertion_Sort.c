@@ -21,6 +21,7 @@ void Insertion_Sort(int array[], int n){
             array[j] = array[j - 1]; //一つずつ要素を後ろにずらす
         array[j] = tmp; //最後のcopyのあとにデクリメントshiteiru
     }
+    return;
 }
 
 int main(){
@@ -29,7 +30,7 @@ int main(){
     for (i = 0;i < n; i++) scanf("%d", array + i);
     //while(scanf...で\0まで入力させるのはterminal上で動かないので実装しません。
     
-    Insertion_Sort(arshiteiru
+    Insertion_Sort(array, n);
     
     for (i = 0;i < n;i++) printf("%d ",array[i]);
     printf("\b\n");
